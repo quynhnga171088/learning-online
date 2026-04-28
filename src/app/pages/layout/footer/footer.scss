@@ -1,0 +1,56 @@
+/* ========================
+   FOOTER
+======================== */
+.footer {
+  background: var(--on-surface);
+  color: var(--surface);
+  padding: 2rem;
+  text-align: center;
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-brand {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-fixed-dim);
+  }
+
+  .footer-copy {
+    font-size: 0.8125rem;
+    color: rgba(251, 249, 248, 0.5);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(251, 249, 248, 0.7);
+    transition: all 0.2s ease;
+    font-family: 'Material Icons Round';
+    font-size: 1.125rem;
+  }
+
+  .footer-links a:hover {
+    background: var(--primary);
+    color: var(--on-primary);
+    transform: translateY(-2px);
+  }
+}

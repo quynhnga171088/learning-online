@@ -1,0 +1,82 @@
+/* ========================
+   Index Author
+======================== */
+.hero {
+  min-height: 100vh;
+  padding: 64px 0 0;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2rem 4rem 0;
+    gap: 1.5rem;
+  }
+
+  .hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 0.875rem;
+    background: var(--primary-fixed);
+    color: var(--on-primary-fixed-variant);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+
+  .hero-label span {
+    font-family: 'Material Icons Round';
+    font-size: 0.875rem;
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 4vw, 3.75rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--on-surface);
+    letter-spacing: -0.02em;
+  }
+
+  .hero-title .highlight {
+    background: linear-gradient(135deg, var(--primary), var(--primary-container));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-role {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--on-surface-variant);
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    color: var(--on-surface-variant);
+    line-height: 1.75;
+    max-width: 480px;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+}
