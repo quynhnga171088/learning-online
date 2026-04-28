@@ -1,6 +1,6 @@
 import 'app/pages/layout/hero/hero.scss';
 
-const Index = () => {
+const Hero = () => {
   return (
     <section id="profile" className="hero">
       <div className="hero-inner">
@@ -10,10 +10,10 @@ const Index = () => {
             Business Analyst — Portfolio 2025
           </div>
 
-          <h1 className="hero-title">
-            Nguyễn Thị<br />
-            <span className="highlight">Quỳnh Nga</span>
-          </h1>
+          <div className="hero-title">
+            Nguyễn Thị Quỳnh Nga<br />
+            <span className="highlight">Business Analyst</span>
+          </div>
 
           <p className="hero-role">Senior Business Analyst &amp; System Designer</p>
 
@@ -64,11 +64,11 @@ const Index = () => {
               <div className="avatar-ring-inner" />
             </div>
             <div className="avatar-img">
-              <img
-                src="/avatar.png"
-                alt="Nguyễn Thị Quỳnh Nga — Business Analyst"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
-              />
+              {/*<img*/}
+              {/*  src="/logo/avatar.png"*/}
+              {/*  alt="Nguyễn Thị Quỳnh Nga — Business Analyst"*/}
+              {/*  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}*/}
+              {/*/>*/}
             </div>
 
             <div className="badge-floating badge-top">
@@ -93,4 +93,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Hero;

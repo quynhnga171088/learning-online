@@ -28,30 +28,32 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="navbar-brand">QUỲNH NGA - Business Analyst</div>
-      <ul className="navbar-nav">
-        {[
-          { id: 'profile', icon: 'person', label: 'Profile' },
-          { id: 'certifications', icon: 'workspace_premium', label: 'Certifications' },
-          { id: 'summary', icon: 'auto_awesome', label: 'Summary' },
-          { id: 'skills', icon: 'psychology', label: 'Skills' },
-          { id: 'education', icon: 'school', label: 'Education' },
-          { id: 'contact', icon: 'mail', label: 'Contact' }
-        ].map(({ id, icon, label }) => (
-          <li key={id}>
-            <a
-              href={`#${id}`}
-              className={activeSection === id ? 'active' : ''}
-              onClick={e => { e.preventDefault(); scrollTo(id); }}
-            >
-              <span className="nav-icon material-icons-round">{icon}</span>
-              {label}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <div className="site-navbar">
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+        <div className="navbar-brand">Quỳnh Nga - Business Analyst</div>
+        <ul className="navbar-nav">
+          {[
+            { id: 'profile', icon: 'person', label: 'Profile' },
+            { id: 'certifications', icon: 'workspace_premium', label: 'Certifications' },
+            { id: 'summary', icon: 'auto_awesome', label: 'Summary' },
+            { id: 'skills', icon: 'psychology', label: 'Skills' },
+            { id: 'education', icon: 'school', label: 'Education' },
+            { id: 'contact', icon: 'mail', label: 'Contact' }
+          ].map(({ id, icon, label }) => (
+            <li key={id}>
+              <a
+                href={`#${id}`}
+                className={activeSection === id ? 'active' : ''}
+                onClick={e => { e.preventDefault(); scrollTo(id); }}
+              >
+                <span className="nav-icon material-icons-round">{icon}</span>
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 };
 

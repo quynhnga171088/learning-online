@@ -8,6 +8,12 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
+        path: 'author',
+        lazy: async () => {
+          const { default: Component } = await import('app/pages/author/author.tsx');
+          return { Component };
+        }
+      }, {
         path: '*',
         lazy: async () => {
           const { default: Component } = await import('app/pages/errorPages/NotFoundPage.tsx');

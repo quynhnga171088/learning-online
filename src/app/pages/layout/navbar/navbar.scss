@@ -1,58 +1,61 @@
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  padding: 0 2rem;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba(251, 249, 248, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(195, 198, 214, 0.2);
-  transition: all 0.3s ease;
+.site-navbar {
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 2rem;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(251, 249, 248, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(195, 198, 214, 0.2);
+    transition: all 0.3s ease;
 
-  .navbar-brand {
-    font-family: var(--font-sans), serif;
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: var(--primary);
-    letter-spacing: 0.02em;
+    .navbar-brand {
+      font-family: var(--font-sans), serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.02em;
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      list-style: none;
+    }
+
+    .navbar-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      padding: 0.5rem 0.875rem;
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--on-surface-variant);
+      transition: all 0.2s ease;
+    }
+
+    .navbar-nav a:hover,
+    .navbar-nav a.active {
+      color: var(--primary);
+      background: var(--primary-fixed);
+    }
+
+    .navbar-nav a .nav-icon {
+      font-size: 1rem;
+    }
   }
-  
-  .navbar-nav {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    list-style: none;
+
+  .navbar.scrolled {
+    box-shadow: var(--shadow-ambient);
   }
-  
-  .navbar-nav a {
-    display: flex;
-    align-items: center;
-    gap: 0.375rem;
-    padding: 0.5rem 0.875rem;
-    border-radius: var(--radius-full);
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--on-surface-variant);
-    transition: all 0.2s ease;
-  }
-  
-  .navbar-nav a:hover,
-  .navbar-nav a.active {
-    color: var(--primary);
-    background: var(--primary-fixed);
-  }
-  
-  .navbar-nav a .nav-icon {
-    font-size: 1rem;
-  }
-}
-  
-.navbar.scrolled {
-  box-shadow: var(--shadow-ambient);
 }
