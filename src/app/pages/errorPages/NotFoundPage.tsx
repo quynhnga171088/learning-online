@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 
 const NotFoundPage = () => {
   return (
-    <>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
-      <div style={{
+    <div style={{
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
@@ -48,7 +46,6 @@ const NotFoundPage = () => {
           Về trang chủ
         </Link>
       </div>
-    </>
   );
 };
 

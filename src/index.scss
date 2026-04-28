@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap');
+@use './style/fonts';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -42,7 +42,7 @@
   --error: #ba1a1a;
   --on-error: #ffffff;
 
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-display: 'Playfair Display', serif;
 
   --radius-sm: 0.25rem;
@@ -55,13 +55,40 @@
   --shadow-float: 0px 24px 64px rgba(27, 28, 28, 0.08);
 }
 
+$fonts: (
+  "10": 0.65rem,
+  "11": 0.7rem,
+  "12": 0.75rem,
+  "13": 0.825rem,
+  "14": 0.875rem,
+  "15": 0.9375rem,
+  "16": 1rem,
+  "18": 1.125rem,
+  "19": 1.25rem,
+  "20": 1.375rem,
+  "21": 1.4375rem,
+  "22": 1.5rem,
+  "23": 1.75rem,
+  "24": 1.875rem
+);
+
+@each $name, $size in $fonts {
+  .g-font-size-#{$name} {
+    font-size: $size;
+  }
+  .g-font-size-#{$name}-important {
+    font-size: $size !important;
+  }
+}
+
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-sans), serif;
+  font-size: 0.875rem;
+  font-weight: 400;
   background-color: var(--surface);
   color: var(--on-surface);
   line-height: 1.6;
@@ -78,7 +105,7 @@ button {
   cursor: pointer;
   border: none;
   background: none;
-  font-family: var(--font-sans);
+  font-family: var(--font-sans), serif;
 }
 
 img {
