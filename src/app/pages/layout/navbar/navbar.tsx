@@ -30,7 +30,13 @@ const Navbar = () => {
   return (
     <div className="site-navbar">
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-        <div className="navbar-brand">Quỳnh Nga - Business Analyst</div>
+        <div className="navbar-brand">
+          <img
+            src="/logo/avatar_cream.svg"
+            alt="Nguyễn Thị Quỳnh Nga — Business Analyst"
+            style={{ height: '60px', objectFit: 'cover', objectPosition: 'top center' }}
+          />
+        </div>
         <ul className="navbar-nav">
           {[
             { id: 'profile', icon: 'person', label: 'Profile' },

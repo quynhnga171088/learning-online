@@ -65,7 +65,7 @@ const Hero = () => {
             </div>
             <div className="avatar-img">
               {/*<img*/}
-              {/*  src="/logo/avatar.png"*/}
+              {/*  src="/logo/owner_avatar.png"*/}
               {/*  alt="Nguyễn Thị Quỳnh Nga — Business Analyst"*/}
               {/*  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}*/}
               {/*/>*/}

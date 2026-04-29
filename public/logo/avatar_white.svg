@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="260" viewBox="0 25 940 260">
+<rect x="-100" y="-100" width="2000" height="1000" fill="#FFFFFF"/>
+<g transform="translate(10,20)">
+  <rect x="20" y="30" width="42" height="180" fill="#0B2D5B"/>
+  <rect x="260" y="30" width="42" height="180" fill="#5B86B8"/>
+  <line x1="62" y1="48" x2="160" y2="140" stroke="#2E5D93" stroke-width="3"/>
+  <line x1="62" y1="72" x2="140" y2="140" stroke="#2E5D93" stroke-width="2"/>
+  <line x1="62" y1="96" x2="120" y2="140" stroke="#2E5D93" stroke-width="2"/>
+  <line x1="260" y1="48" x2="160" y2="140" stroke="#5B86B8" stroke-width="3"/>
+  <line x1="260" y1="72" x2="180" y2="140" stroke="#5B86B8" stroke-width="2"/>
+  <line x1="260" y1="96" x2="200" y2="140" stroke="#5B86B8" stroke-width="2"/>
+  <path d="M0,190 Q160,80 320,190" fill="none" stroke="#0B2D5B" stroke-width="14"/>
+  <path d="M10,202 Q160,115 310,202" fill="none" stroke="#5B86B8" stroke-width="6"/>
+</g>
+<line x1="360" y1="40" x2="360" y2="275" stroke="#1E3A66" stroke-width="2"/>
+<text x="660" y="105" text-anchor="middle" font-size="42" font-family="Georgia, serif" fill="#102E57" letter-spacing="5">BUSINESS ANALYST</text>
+<text x="660" y="155" text-anchor="middle" font-size="22" font-family="Arial, sans-serif" fill="#102E57">KẾT NỐI DOANH NGHIỆP VỚI GIẢI PHÁP CÔNG NGHỆ.</text>
+<line x1="560" y1="178" x2="760" y2="178" stroke="#5B86B8" stroke-width="2"/>
+<circle cx="660" cy="178" r="4" fill="#5B86B8"/>
+<text x="660" y="245" text-anchor="middle" font-size="42" font-family="Georgia, serif" fill="#102E57">NGUYỄN THỊ QUỲNH NGA</text>
+</svg>
