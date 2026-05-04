@@ -1,22 +1,18 @@
+import { NavLink } from 'react-router-dom';
 import 'app/pages/layout/navbar/navbar.scss';
 
 const navbarMenu = [
-  { id: 'home', icon: 'home', label: 'Trang chủ' },
-  { id: 'article', icon: 'auto_stories', label: 'Bài viết' },
-  { id: 'outstanding', icon: 'star', label: 'Nổi bật' },
-  { id: 'Introduce', icon: 'handshake', label: 'Giới thiệu' },
-  { id: 'author', icon: 'cruelty_free', label: 'Tác giả' }
+  { to: '/',         icon: 'home',          label: 'Trang chủ' },
+  { to: '/articles', icon: 'auto_stories',  label: 'Bài viết' },
+  { to: '/featured', icon: 'star',          label: 'Nổi bật' },
+  { to: '/about',    icon: 'handshake',     label: 'Giới thiệu' },
+  { to: '/author',   icon: 'cruelty_free',  label: 'Tác giả' }
 ];
 
 const Navbar = () => {
-
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className="site-navbar">
-      <nav className={`navbar`}>
+      <nav className="navbar">
         <div className="navbar-brand">
           <img
             src="/logo/avatar_cream.svg"
@@ -25,15 +21,16 @@ const Navbar = () => {
           />
         </div>
         <ul className="navbar-nav">
-          {navbarMenu.map(({ id, icon, label }) => (
-            <li key={id}>
-              <a
-                href={`#${id}`}
-                onClick={e => { e.preventDefault(); scrollTo(id); }}
+          {navbarMenu.map(({ to, icon, label }) => (
+            <li key={to}>
+              <NavLink
+                to={to}
+                end={to === '/'}
+                className={({ isActive }) => (isActive ? 'active' : undefined)}
               >
                 <span className="nav-icon material-icons-round material-symbols-outlined">{icon}</span>
                 {label}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>

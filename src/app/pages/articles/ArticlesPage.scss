@@ -1,0 +1,181 @@
+// ── ArticlesPage.scss ── Danh sách bài viết ────────────────────────────────
+
+$accent: #0066cc;
+$accent-dark: #004e9f;
+$text-primary: #191c22;
+$text-secondary: #414753;
+$border: #c1c6d5;
+$surface: #f9f9ff;
+$surface-low: #f2f3fc;
+$surface-container: #ecedf6;
+$white: #ffffff;
+
+.ap-page {
+  background: $surface;
+  min-height: 100vh;
+  color: $text-primary;
+  padding: 48px 0 80px;
+}
+
+.ap-inner {
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 0 80px;
+
+  @media (max-width: 1199px) { padding: 0 40px; }
+  @media (max-width: 767px)  { padding: 0 16px; }
+}
+
+// ── Filter tabs ───────────────────────────────────────────────────────────────
+.ap-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border;
+}
+
+.ap-filter-btn {
+  padding: 8px 18px;
+  border-radius: 100px;
+  border: 1px solid $border;
+  background: $white;
+  color: $text-secondary;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 200ms;
+
+  &:hover {
+    border-color: $accent;
+    color: $accent;
+    background: rgba($accent, 0.05);
+  }
+
+  &--active {
+    background: $accent;
+    color: $white;
+    border-color: $accent;
+
+    &:hover {
+      background: $accent-dark;
+      color: $white;
+    }
+  }
+}
+
+// ── Article list ──────────────────────────────────────────────────────────────
+.ap-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ap-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px 0;
+  border-bottom: 1px solid $border;
+  cursor: pointer;
+  transition: background 200ms;
+
+  &:first-child { padding-top: 0; }
+  &:last-child { border-bottom: none; }
+  &:hover { background: transparent; }
+  &:hover .ap-card__title a { color: $accent; }
+
+  &__body { flex: 1; }
+
+  &__tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $accent;
+    background: rgba($accent, 0.08);
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 10px;
+
+    a {
+      color: $text-primary;
+      text-decoration: none;
+      transition: color 200ms;
+
+      &:hover { color: $accent; }
+    }
+  }
+
+  &__excerpt {
+    font-size: 14px;
+    line-height: 1.65;
+    color: $text-secondary;
+    margin-bottom: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: $text-secondary;
+    font-weight: 500;
+  }
+
+  &__sep { opacity: 0.5; }
+
+  &__action { flex-shrink: 0; padding-top: 8px; }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $surface-container;
+    color: $accent;
+    text-decoration: none;
+    transition: background 200ms, transform 200ms;
+
+    .material-icons-round { font-size: 18px; }
+
+    &:hover {
+      background: $accent;
+      color: $white;
+      transform: translateX(2px);
+    }
+  }
+
+  @media (max-width: 560px) {
+    &__action { display: none; }
+  }
+}
+
+// ── Empty state ───────────────────────────────────────────────────────────────
+.ap-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 80px 0;
+  color: $text-secondary;
+
+  .material-icons-round { font-size: 48px; opacity: 0.4; }
+  p { font-size: 15px; }
+}

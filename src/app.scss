@@ -10,10 +10,24 @@
     flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     justify-content: center;
+    width: 100%;
 
     .container {
+      padding-top: 65px;
       flex: 1 1 auto;
       -ms-flex: 1 1 auto;
+    }
+
+    @media (min-width: 1500px) {
+      .container {
+        max-width: 1500px;
+      }
+    }
+
+    @media (max-width: 1499px) {
+      .container {
+        max-width: 100%;
+      }
     }
   }
 }

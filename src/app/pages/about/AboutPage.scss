@@ -1,0 +1,329 @@
+// ── AboutPage.scss ── Giới thiệu ──────────────────────────────────────────
+
+$accent: #0066cc;
+$accent-dark: #004e9f;
+$text-primary: #191c22;
+$text-secondary: #414753;
+$border: #c1c6d5;
+$surface: #f9f9ff;
+$surface-low: #f2f3fc;
+$surface-container: #ecedf6;
+$white: #ffffff;
+
+.about-page {
+  background: $surface;
+  min-height: 100vh;
+  color: $text-primary;
+}
+
+.abt-inner {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 80px;
+
+  @media (max-width: 1199px) { padding: 0 40px; }
+  @media (max-width: 767px)  { padding: 0 20px; }
+}
+
+// ── Hero ──────────────────────────────────────────────────────────────────────
+.abt-hero {
+  padding: 72px 0 64px;
+  border-bottom: 1px solid $border;
+  background: linear-gradient(180deg, $surface-low 0%, $surface 100%);
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: $surface-container;
+    border: 1px solid $border;
+    border-radius: 100px;
+    padding: 6px 16px;
+    margin-bottom: 24px;
+  }
+
+  &__badge-role {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $text-secondary;
+  }
+
+  &__badge-brand {
+    font-size: 12px;
+    font-weight: 700;
+    color: $accent;
+  }
+
+  &__label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $accent;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-size: clamp(28px, 4.5vw, 52px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: $text-primary;
+    max-width: 720px;
+    margin-bottom: 28px;
+  }
+
+  &__quote {
+    font-size: clamp(15px, 1.5vw, 18px);
+    line-height: 1.7;
+    color: $text-secondary;
+    border-left: 3px solid $accent;
+    padding-left: 20px;
+    max-width: 680px;
+    margin: 0 0 36px;
+    font-style: italic;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+.abt-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: $accent;
+  color: $white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 200ms, transform 150ms;
+
+  &:hover {
+    background: $accent-dark;
+    transform: translateY(-1px);
+    color: $white;
+  }
+}
+
+.abt-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: $text-secondary;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid $border;
+  text-decoration: none;
+  transition: all 200ms;
+
+  &:hover {
+    background: $surface-low;
+    border-color: darken($border, 10%);
+    color: $text-primary;
+  }
+}
+
+// ── Section label ──────────────────────────────────────────────────────────────
+.abt-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $text-secondary;
+  margin-bottom: 32px;
+}
+
+// ── Core values ───────────────────────────────────────────────────────────────
+.abt-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  padding: 56px 0;
+  border-bottom: 1px solid $border;
+
+  @media (max-width: 767px) { grid-template-columns: 1fr; }
+}
+
+.abt-value-card {
+  padding: 40px 36px;
+  border-right: 1px solid $border;
+
+  &:first-child { border-left: 1px solid $border; }
+
+  @media (max-width: 767px) {
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid $border;
+    padding: 32px 0;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba($accent, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .material-icons-round {
+      font-size: 24px;
+      color: $accent;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 12px;
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: $text-secondary;
+  }
+}
+
+// ── Timeline ──────────────────────────────────────────────────────────────────
+.abt-timeline {
+  padding: 56px 0;
+  border-bottom: 1px solid $border;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 32px;
+    padding: 32px 0;
+    border-bottom: 1px solid $border;
+
+    &:last-child { border-bottom: none; }
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+  }
+
+  &__period {
+    font-size: 12px;
+    font-weight: 600;
+    color: $accent;
+    letter-spacing: 0.04em;
+    padding-top: 4px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 8px;
+  }
+
+  &__desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: $text-secondary;
+  }
+}
+
+// ── Stats ─────────────────────────────────────────────────────────────────────
+.abt-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  padding: 48px 0;
+  border-bottom: 1px solid $border;
+
+  @media (max-width: 767px) { grid-template-columns: repeat(2, 1fr); }
+}
+
+.abt-stat {
+  text-align: center;
+  padding: 24px;
+  border-right: 1px solid $border;
+
+  &:first-child { border-left: 1px solid $border; }
+
+  @media (max-width: 767px) {
+    &:nth-child(2) { border-right: 1px solid $border; }
+    &:nth-child(3) { border-left: 1px solid $border; }
+  }
+
+  &__value {
+    font-size: 36px;
+    font-weight: 800;
+    color: $accent;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  &__label {
+    font-size: 13px;
+    color: $text-secondary;
+    font-weight: 500;
+  }
+}
+
+// ── Social ────────────────────────────────────────────────────────────────────
+.abt-social {
+  padding: 56px 0 80px;
+
+  &__desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: $text-secondary;
+    max-width: 520px;
+    margin-bottom: 32px;
+  }
+
+  &__grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: 1px solid $border;
+    border-radius: 8px;
+    text-decoration: none;
+    color: $text-secondary;
+    font-size: 14px;
+    font-weight: 500;
+    background: $white;
+    transition: all 200ms;
+
+    .material-icons-round { font-size: 18px; color: $accent; }
+
+    &:hover {
+      border-color: $accent;
+      color: $accent;
+      background: rgba($accent, 0.04);
+      transform: translateY(-2px);
+    }
+  }
+}

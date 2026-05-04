@@ -1,0 +1,413 @@
+// ── ArticleDetailPage.scss ── Chi tiết bài viết ────────────────────────────
+
+$accent: #0066cc;
+$accent-dark: #004e9f;
+$text-primary: #191c22;
+$text-secondary: #414753;
+$border: #c1c6d5;
+$surface: #f9f9ff;
+$surface-low: #f2f3fc;
+$surface-container: #ecedf6;
+$white: #ffffff;
+
+.ad-page {
+  background: $surface;
+  min-height: 100vh;
+  color: $text-primary;
+  padding: 48px 0 80px;
+}
+
+.ad-inner {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 80px;
+
+  @media (max-width: 1199px) { padding: 0 40px; }
+  @media (max-width: 767px)  { padding: 0 20px; }
+}
+
+// ── Two-column layout ─────────────────────────────────────────────────────────
+.ad-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 64px;
+  align-items: start;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+// ── Breadcrumb ────────────────────────────────────────────────────────────────
+.ad-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: $text-secondary;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+
+  a {
+    color: $text-secondary;
+    text-decoration: none;
+    transition: color 200ms;
+
+    &:hover { color: $accent; }
+  }
+
+  .material-icons-round { font-size: 14px; opacity: 0.5; }
+}
+
+// ── Article header ────────────────────────────────────────────────────────────
+.ad-header {
+  margin-bottom: 32px;
+}
+
+.ad-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $accent;
+  background: rgba($accent, 0.08);
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.ad-title {
+  font-size: clamp(24px, 3.5vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: $text-primary;
+  margin-bottom: 20px;
+}
+
+.ad-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: $text-secondary;
+  flex-wrap: wrap;
+
+  &__author { font-weight: 600; color: $text-primary; }
+  &__sep { opacity: 0.4; }
+  .material-icons-round { font-size: 15px; }
+}
+
+// ── Cover ─────────────────────────────────────────────────────────────────────
+.ad-cover {
+  width: 100%;
+  height: 360px;
+  background: linear-gradient(135deg, $surface-container 0%, darken($surface-container, 8%) 100%);
+  border-radius: 12px;
+  margin-bottom: 40px;
+
+  @media (max-width: 767px) { height: 200px; }
+}
+
+// ── Article body ──────────────────────────────────────────────────────────────
+.ad-body {
+  font-size: 17px;
+  line-height: 1.75;
+  color: $text-primary;
+  max-width: 680px;
+
+  p { margin-bottom: 1.5em; }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: $text-primary;
+    margin: 2.5em 0 1em;
+    letter-spacing: -0.015em;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: $text-primary;
+    margin: 2em 0 0.75em;
+  }
+}
+
+.ad-example-box {
+  background: $surface-container;
+  border-left: 3px solid $accent;
+  border-radius: 0 8px 8px 0;
+  padding: 20px 24px;
+  margin: 24px 0;
+
+  &__label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $accent;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: $text-secondary;
+    margin: 0;
+    font-style: italic;
+  }
+}
+
+.ad-quote {
+  border-left: 3px solid $accent;
+  padding: 16px 24px;
+  margin: 32px 0;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6;
+  color: $text-secondary;
+  background: $surface-low;
+  border-radius: 0 8px 8px 0;
+}
+
+.ad-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5em;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid $border;
+    font-size: 15px;
+    line-height: 1.6;
+    color: $text-secondary;
+
+    &:last-child { border-bottom: none; }
+
+    &::before {
+      content: '';
+      flex-shrink: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $accent;
+      margin-top: 8px;
+    }
+  }
+}
+
+// ── Author card ───────────────────────────────────────────────────────────────
+.ad-author-card {
+  display: flex;
+  gap: 20px;
+  padding: 32px;
+  border: 1px solid $border;
+  border-radius: 12px;
+  margin: 48px 0;
+  background: $white;
+
+  @media (max-width: 560px) { flex-direction: column; }
+
+  &__avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, $accent 0%, $accent-dark 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: $white;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 8px;
+  }
+
+  &__bio {
+    font-size: 13px;
+    line-height: 1.65;
+    color: $text-secondary;
+    margin-bottom: 14px;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    color: $accent;
+    text-decoration: none;
+    transition: gap 200ms;
+
+    .material-icons-round { font-size: 14px; }
+    &:hover { gap: 8px; }
+  }
+}
+
+// ── Comments ──────────────────────────────────────────────────────────────────
+.ad-comments {
+  padding-top: 40px;
+  border-top: 1px solid $border;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 24px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid $border;
+    border-radius: 8px;
+    background: $white;
+    font-size: 14px;
+    color: $text-primary;
+    resize: vertical;
+    outline: none;
+    transition: border-color 200ms;
+
+    &::placeholder { color: lighten($text-secondary, 20%); }
+    &:focus { border-color: $accent; }
+  }
+
+  &__submit {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background: $accent;
+    color: $white;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 200ms;
+
+    &:hover { background: $accent-dark; }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.ad-comment {
+  display: flex;
+  gap: 16px;
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $surface-container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    .material-icons-round { font-size: 20px; color: $text-secondary; }
+  }
+
+  &__body { flex: 1; }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  &__author {
+    font-size: 14px;
+    font-weight: 600;
+    color: $text-primary;
+  }
+
+  &__time {
+    font-size: 12px;
+    color: $text-secondary;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.65;
+    color: $text-secondary;
+  }
+}
+
+// ── Sidebar ───────────────────────────────────────────────────────────────────
+.ad-sidebar {
+  position: sticky;
+  top: 80px;
+
+  &__title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $text-secondary;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $border;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &__item {
+    display: block;
+    padding: 16px 0;
+    border-bottom: 1px solid $border;
+    text-decoration: none;
+    cursor: pointer;
+    transition: padding-left 200ms;
+
+    &:last-child { border-bottom: none; }
+    &:hover { padding-left: 4px; }
+    &:hover .ad-sidebar__item-title { color: $accent; }
+  }
+
+  &__item-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $accent;
+    margin-bottom: 6px;
+  }
+
+  &__item-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: $text-primary;
+    transition: color 200ms;
+  }
+}
