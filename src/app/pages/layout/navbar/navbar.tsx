@@ -2,11 +2,12 @@ import { NavLink } from 'react-router-dom';
 import 'app/pages/layout/navbar/navbar.scss';
 
 const navbarMenu = [
-  { to: '/',         icon: 'home',          label: 'Trang chủ' },
-  { to: '/articles', icon: 'auto_stories',  label: 'Bài viết' },
-  { to: '/featured', icon: 'star',          label: 'Nổi bật' },
-  { to: '/about',    icon: 'handshake',     label: 'Giới thiệu' },
-  { to: '/author',   icon: 'cruelty_free',  label: 'Tác giả' }
+  { to: '/', icon: 'home', label: 'Trang chủ' },
+  { to: '/articles', icon: 'auto_stories', label: 'Bài viết' },
+  { to: '/featured', icon: 'star', label: 'Nổi bật' },
+  { to: '/test', icon: 'edit_note', label: 'Test' },
+  { to: '/about', icon: 'handshake', label: 'Giới thiệu' },
+  { to: '/author', icon: 'cruelty_free', label: 'Tác giả' }
 ];
 
 const Navbar = () => {

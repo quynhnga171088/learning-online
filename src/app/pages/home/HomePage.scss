@@ -1,5 +1,6 @@
 // ── HomePage.scss ── TechJournal Việt ─────────────────────────────────────
 // Matches Stitch design: Premium Vietnamese Tech Journal
+@use 'sass:color';
 
 // Design tokens (from Stitch project)
 $primary:           #004e9f;
@@ -485,7 +486,7 @@ $outline-var:       #c1c6d5;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 0.02em;
-    color: lighten($on-surface-var, 20%);
+    color: color.adjust($on-surface-var, $lightness: 20%);
     margin-bottom: 8px;
   }
 
@@ -609,7 +610,7 @@ $outline-var:       #c1c6d5;
     background: transparent;
     min-width: 0;
 
-    &::placeholder { color: lighten($on-surface-var, 25%); }
+    &::placeholder { color: color.adjust($on-surface-var, $lightness: 25%); }
   }
 
   &__btn {

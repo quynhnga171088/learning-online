@@ -1,4 +1,5 @@
 // ── FeaturedPage.scss ── Nổi bật / Editorial Focus ────────────────────────
+@use 'sass:color';
 
 $accent: #0066cc;
 $accent-dark: #004e9f;
@@ -141,7 +142,7 @@ $white: #ffffff;
   &__main-img {
     width: 100%;
     height: 320px;
-    background: linear-gradient(135deg, $surface-container 0%, darken($surface-container, 6%) 100%);
+    background: linear-gradient(135deg, $surface-container 0%, color.adjust($surface-container, $lightness: -6%) 100%);
     border-radius: 12px;
     margin-bottom: 24px;
   }

@@ -1,4 +1,5 @@
 // ── ArticleDetailPage.scss ── Chi tiết bài viết ────────────────────────────
+@use 'sass:color';
 
 $accent: #0066cc;
 $accent-dark: #004e9f;
@@ -104,7 +105,7 @@ $white: #ffffff;
 .ad-cover {
   width: 100%;
   height: 360px;
-  background: linear-gradient(135deg, $surface-container 0%, darken($surface-container, 8%) 100%);
+  background: linear-gradient(135deg, $surface-container 0%, color.adjust($surface-container, $lightness: -8%) 100%);
   border-radius: 12px;
   margin-bottom: 40px;
 
@@ -288,7 +289,7 @@ $white: #ffffff;
     outline: none;
     transition: border-color 200ms;
 
-    &::placeholder { color: lighten($text-secondary, 20%); }
+    &::placeholder { color: color.adjust($text-secondary, $lightness: 20%); }
     &:focus { border-color: $accent; }
   }
 

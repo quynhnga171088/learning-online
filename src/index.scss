@@ -76,8 +76,23 @@ $fonts: (
   .g-font-size-#{$name} {
     font-size: $size;
   }
-  .g-font-size-#{$name}-important {
+  .g-font-size-#{$name} {
     font-size: $size !important;
+  }
+}
+
+@for $i from 0 through 20 {
+  .g-margin-top-#{$i * 5} {
+    margin-top: #{$i * 5}px + ' !important';
+  }
+  .g-margin-bottom-#{$i * 5} {
+    margin-bottom: #{$i * 5}px + ' !important';
+  }
+  .g-margin-left-#{$i} {
+    margin-left: #{$i * 5} + 'px !important';
+  }
+  .g-margin-right-#{$i }-per {
+    margin-right: #{$i * 5}px + ' !important';
   }
 }
 

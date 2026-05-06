@@ -1,4 +1,5 @@
 // ── AboutPage.scss ── Giới thiệu ──────────────────────────────────────────
+@use 'sass:color';
 
 $accent: #0066cc;
 $accent-dark: #004e9f;
@@ -129,7 +130,7 @@ $white: #ffffff;
 
   &:hover {
     background: $surface-low;
-    border-color: darken($border, 10%);
+    border-color: color.adjust($border, $lightness: -10%);
     color: $text-primary;
   }
 }

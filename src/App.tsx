@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="site">
       <Navbar />
-      <div className="site-content">
+      <div className="site-content g-margin-top-65">
         <Outlet />
       </div>
       <Footer />
