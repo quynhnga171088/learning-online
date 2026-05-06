@@ -30,17 +30,17 @@ const featuredArticles = [
 ];
 
 const categories = [
-  { icon: 'psychology',     label: 'Trí tuệ nhân tạo (AI)', desc: 'Cập nhật những xu hướng, công cụ và tác động của AI đối với cuộc sống và công việc hàng ngày.', featured: true },
-  { icon: 'rocket_launch',  label: 'Khởi nghiệp',   desc: '', featured: false },
-  { icon: 'speed',          label: 'Năng suất',      desc: '', featured: false },
-  { icon: 'handyman',       label: 'Công cụ số',     desc: '', featured: false },
-  { icon: 'terminal',       label: 'Công nghệ',      desc: '', featured: false }
+  { icon: 'psychology', label: 'Trí tuệ nhân tạo (AI)', desc: 'Cập nhật những xu hướng, công cụ và tác động của AI đối với cuộc sống và công việc hàng ngày.', featured: true },
+  { icon: 'rocket_launch', label: 'Khởi nghiệp', desc: '', featured: false },
+  { icon: 'speed', label: 'Năng suất', desc: '', featured: false },
+  { icon: 'handyman', label: 'Công cụ số', desc: '', featured: false },
+  { icon: 'terminal', label: 'Công nghệ', desc: '', featured: false }
 ];
 
 const latestPosts = [
-  { id: 1, date: '12 Tháng 10, 2024', title: 'Đánh giá chi tiết bộ xử lý mới từ Apple M4',              excerpt: 'Sức mạnh xử lý vượt trội và khả năng tiết kiệm điện năng ấn tượng cho các dòng iPad Pro mới nhất.' },
-  { id: 2, date: '10 Tháng 10, 2024', title: 'Tại sao SaaS đang trở nên khó khăn hơn?',                excerpt: 'Thị trường bão hòa và sự thay đổi trong hành vi người dùng đang buộc các công ty phần mềm phải chuyển mình.' },
-  { id: 3, date: '08 Tháng 10, 2024', title: 'Tương lai của làm việc từ xa tại Việt Nam',              excerpt: 'Những thống kê mới nhất về mô hình hybrid và xu hướng chuyển dịch văn phòng ra khỏi trung tâm thành phố.' }
+  { id: 1, date: '12 Tháng 10, 2024', title: 'Đánh giá chi tiết bộ xử lý mới từ Apple M4', excerpt: 'Sức mạnh xử lý vượt trội và khả năng tiết kiệm điện năng ấn tượng cho các dòng iPad Pro mới nhất.' },
+  { id: 2, date: '10 Tháng 10, 2024', title: 'Tại sao SaaS đang trở nên khó khăn hơn?', excerpt: 'Thị trường bão hòa và sự thay đổi trong hành vi người dùng đang buộc các công ty phần mềm phải chuyển mình.' },
+  { id: 3, date: '08 Tháng 10, 2024', title: 'Tương lai của làm việc từ xa tại Việt Nam', excerpt: 'Những thống kê mới nhất về mô hình hybrid và xu hướng chuyển dịch văn phòng ra khỏi trung tâm thành phố.' }
 ];
 
 const HomePage = () => {

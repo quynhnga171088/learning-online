@@ -23,11 +23,11 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Tổ chức Kickoff Meeting với toàn bộ team dự án' },
       { value: 'b', label: 'Bộ phận Sales tiếp cận và mang dự án từ khách hàng về' },
       { value: 'c', label: 'Developer bắt đầu viết code theo yêu cầu' },
-      { value: 'd', label: 'BA tạo tài liệu SRS và đặc tả yêu cầu' },
+      { value: 'd', label: 'BA tạo tài liệu SRS và đặc tả yêu cầu' }
     ],
     correct: 'b',
     feedbackCorrect: '✅ Chính xác! Sales là bộ phận khởi đầu — tìm kiếm, tiếp cận khách hàng tiềm năng, giới thiệu năng lực công ty và đưa dự án về cho đội phát triển.',
-    feedbackIncorrect: '❌ Chưa đúng. Bước khởi đầu là bộ phận Sales tiếp cận khách hàng để mang dự án về — chứ không phải bắt đầu từ kỹ thuật.',
+    feedbackIncorrect: '❌ Chưa đúng. Bước khởi đầu là bộ phận Sales tiếp cận khách hàng để mang dự án về — chứ không phải bắt đầu từ kỹ thuật.'
   },
   {
     id: 2,
@@ -36,11 +36,11 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Viết tài liệu đặc tả yêu cầu (SRS) và Basic Design' },
       { value: 'b', label: 'Kiểm thử sản phẩm trước khi bàn giao cho khách hàng' },
       { value: 'c', label: 'Tiếp cận khách hàng, giới thiệu công ty và thu thập nhu cầu ban đầu' },
-      { value: 'd', label: 'Quản lý tiến độ phát triển và báo cáo với khách hàng' },
+      { value: 'd', label: 'Quản lý tiến độ phát triển và báo cáo với khách hàng' }
     ],
     correct: 'c',
     feedbackCorrect: '✅ Đúng! Sales tìm kiếm & tiếp cận khách hàng tiềm năng, giới thiệu năng lực công ty, thu thập nhu cầu ban đầu rồi đưa dự án về cho đội phát triển.',
-    feedbackIncorrect: '❌ Chưa đúng. Nhiệm vụ của Sales là tiếp cận khách hàng, giới thiệu công ty và thu thập nhu cầu ban đầu — không liên quan đến kỹ thuật hay kiểm thử.',
+    feedbackIncorrect: '❌ Chưa đúng. Nhiệm vụ của Sales là tiếp cận khách hàng, giới thiệu công ty và thu thập nhu cầu ban đầu — không liên quan đến kỹ thuật hay kiểm thử.'
   },
   {
     id: 3,
@@ -49,11 +49,11 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Presales / BU / SBU / PM / BrSE (tùy công ty)' },
       { value: 'b', label: 'Chỉ có Tester và QA thực hiện' },
       { value: 'c', label: 'Chỉ có khách hàng và Sales thực hiện' },
-      { value: 'd', label: 'Developer tự phân tích yêu cầu và estimate' },
+      { value: 'd', label: 'Developer tự phân tích yêu cầu và estimate' }
     ],
     correct: 'a',
     feedbackCorrect: '✅ Chính xác! Giai đoạn Bidding do phòng phát triển đảm nhận — có thể là Presales, BU, SBU, PM hoặc BrSE tùy theo cơ cấu của từng công ty.',
-    feedbackIncorrect: '❌ Chưa đúng. Giai đoạn Bidding là trách nhiệm của Presales / BU / SBU / PM / BrSE — không phải Tester hay Sales thuần túy.',
+    feedbackIncorrect: '❌ Chưa đúng. Giai đoạn Bidding là trách nhiệm của Presales / BU / SBU / PM / BrSE — không phải Tester hay Sales thuần túy.'
   },
   {
     id: 4,
@@ -62,11 +62,11 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'SRS và Basic Design' },
       { value: 'b', label: 'Function List và Prototype chi tiết' },
       { value: 'c', label: 'Source code và Test Report' },
-      { value: 'd', label: 'Proposal (đề xuất) và Estimate (ước lượng chi phí, thời gian)' },
+      { value: 'd', label: 'Proposal (đề xuất) và Estimate (ước lượng chi phí, thời gian)' }
     ],
     correct: 'd',
     feedbackCorrect: '✅ Đúng rồi! Giai đoạn Bidding cần tạo Proposal (bản đề xuất dự án) và Estimate (ước lượng chi phí & thời gian thực hiện) để gửi cho khách hàng xem xét.',
-    feedbackIncorrect: '❌ Chưa đúng. Giai đoạn Bidding cần tạo Proposal và Estimate — SRS và Basic Design thuộc về giai đoạn Specs (Bước 3.1) sau khi đã có hợp đồng.',
+    feedbackIncorrect: '❌ Chưa đúng. Giai đoạn Bidding cần tạo Proposal và Estimate — SRS và Basic Design thuộc về giai đoạn Specs (Bước 3.1) sau khi đã có hợp đồng.'
   },
   {
     id: 5,
@@ -75,11 +75,11 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Vì đó là yêu cầu bắt buộc theo quy định của mọi hợp đồng outsource' },
       { value: 'b', label: 'Vì khi nhìn thấy hình ảnh trực quan, khách hàng dễ hình dung và ra quyết định nhanh hơn' },
       { value: 'c', label: 'Vì Developer cần prototype để bắt đầu code ngay lập tức' },
-      { value: 'd', label: 'Vì Tester cần prototype để viết test case từ sớm' },
+      { value: 'd', label: 'Vì Tester cần prototype để viết test case từ sớm' }
     ],
     correct: 'b',
     feedbackCorrect: '✅ Chính xác! Draft Prototype giúp khách hàng hình dung trực quan về sản phẩm sẽ được xây dựng, từ đó dễ dàng ra quyết định và chốt hợp đồng nhanh hơn.',
-    feedbackIncorrect: '❌ Chưa đúng. Lý do chính là để khách hàng dễ hình dung sản phẩm và ra quyết định nhanh hơn — đây là công cụ hỗ trợ bán hàng, không phải yêu cầu bắt buộc.',
+    feedbackIncorrect: '❌ Chưa đúng. Lý do chính là để khách hàng dễ hình dung sản phẩm và ra quyết định nhanh hơn — đây là công cụ hỗ trợ bán hàng, không phải yêu cầu bắt buộc.'
   },
   {
     id: 6,
@@ -88,11 +88,12 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Ngay khi Sales mới gặp khách hàng lần đầu' },
       { value: 'b', label: 'Sau khi giai đoạn Test hoàn thành' },
       { value: 'c', label: 'Sau khi khách hàng đồng ý và dự án chính thức bắt đầu' },
-      { value: 'd', label: 'Sau khi bàn giao phần mềm cho khách hàng' },
+      { value: 'd', label: 'Sau khi bàn giao phần mềm cho khách hàng' }
     ],
     correct: 'c',
-    feedbackCorrect: '✅ Đúng! Kickoff Meeting được tổ chức sau khi khách hàng đồng ý hợp tác, đánh dấu thời điểm dự án chính thức khởi động với sự tham gia của khách hàng, Sales, PM và toàn bộ team dự án.',
-    feedbackIncorrect: '❌ Chưa đúng. Kickoff Meeting diễn ra sau khi khách hàng đã đồng ý — đây là cuộc họp khởi động chính thức của dự án, không phải lúc Sales mới gặp lần đầu.',
+    feedbackCorrect: '✅ Đúng! Kickoff Meeting được tổ chức sau khi khách hàng đồng ý hợp tác, đánh dấu thời điểm'
+      + ' dự án chính thức khởi động với sự tham gia của khách hàng, Sales, PM và toàn bộ team dự án.',
+    feedbackIncorrect: '❌ Chưa đúng. Kickoff Meeting diễn ra sau khi khách hàng đã đồng ý — đây là cuộc họp khởi động chính thức của dự án, không phải lúc Sales mới gặp lần đầu.'
   },
   {
     id: 7,
@@ -101,11 +102,11 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Khách hàng + Sales + PM + toàn bộ team dự án' },
       { value: 'b', label: 'Chỉ có PM và Developer nội bộ' },
       { value: 'c', label: 'Chỉ có Sales và khách hàng — team kỹ thuật không tham gia' },
-      { value: 'd', label: 'Chỉ có BrSE và Tester' },
+      { value: 'd', label: 'Chỉ có BrSE và Tester' }
     ],
     correct: 'a',
     feedbackCorrect: '✅ Đúng! Kickoff Meeting là buổi họp quy tụ đầy đủ: Khách hàng + Sales + PM + toàn bộ team dự án — để cùng thống nhất mục tiêu, phạm vi và kế hoạch dự án.',
-    feedbackIncorrect: '❌ Chưa đúng. Kickoff Meeting cần có Khách hàng + Sales + PM + toàn bộ team dự án — đây là buổi họp quan trọng để tất cả các bên cùng thống nhất từ đầu.',
+    feedbackIncorrect: '❌ Chưa đúng. Kickoff Meeting cần có Khách hàng + Sales + PM + toàn bộ team dự án — đây là buổi họp quan trọng để tất cả các bên cùng thống nhất từ đầu.'
   },
   {
     id: 8,
@@ -114,11 +115,11 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Developer và Tester' },
       { value: 'b', label: 'BA (Business Analyst) và/hoặc BrSE' },
       { value: 'c', label: 'Sales và PM' },
-      { value: 'd', label: 'Khách hàng tự viết tài liệu và gửi cho team' },
+      { value: 'd', label: 'Khách hàng tự viết tài liệu và gửi cho team' }
     ],
     correct: 'b',
     feedbackCorrect: '✅ Chính xác! BA (Business Analyst) và/hoặc BrSE đóng vai trò lắng nghe, khai thác yêu cầu từ khách hàng rồi chuyển hóa thành các tài liệu đặc tả kỹ thuật.',
-    feedbackIncorrect: '❌ Chưa đúng. Người trực tiếp "hearing" khách hàng trong giai đoạn Specs là BA (Business Analyst) và/hoặc BrSE — họ là cầu nối giữa nghiệp vụ và kỹ thuật.',
+    feedbackIncorrect: '❌ Chưa đúng. Người trực tiếp "hearing" khách hàng trong giai đoạn Specs là BA (Business Analyst) và/hoặc BrSE — họ là cầu nối giữa nghiệp vụ và kỹ thuật.'
   },
   {
     id: 9,
@@ -127,11 +128,12 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Function List (Danh sách chức năng)' },
       { value: 'b', label: 'SRS (Software Requirement Specification)' },
       { value: 'c', label: 'Test Report (Báo cáo kiểm thử)' },
-      { value: 'd', label: 'Basic Design (Thiết kế cơ bản)' },
+      { value: 'd', label: 'Basic Design (Thiết kế cơ bản)' }
     ],
     correct: 'c',
-    feedbackCorrect: '✅ Đúng! Test Report thuộc giai đoạn kiểm thử (Bước 3.2), không phải giai đoạn tạo Specs. Giai đoạn 3.1 tạo ra: Function List, Prototype, SRS và Basic Design.',
-    feedbackIncorrect: '❌ Chưa đúng. Test Report mới là tài liệu không thuộc giai đoạn Specs — nó được tạo ra trong quá trình kiểm thử (Bước 3.2), sau khi Coding đã hoàn thành.',
+    feedbackCorrect: '✅ Đúng! Test Report thuộc giai đoạn kiểm thử (Bước 3.2), không phải giai đoạn tạo Specs.'
+      + ' Giai đoạn 3.1 tạo ra: Function List, Prototype, SRS và Basic Design.',
+    feedbackIncorrect: '❌ Chưa đúng. Test Report mới là tài liệu không thuộc giai đoạn Specs — nó được tạo ra trong quá trình kiểm thử (Bước 3.2), sau khi Coding đã hoàn thành.'
   },
   {
     id: 10,
@@ -140,11 +142,12 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'PM xem xét và tự quyết định cho phép bắt đầu' },
       { value: 'b', label: 'Developer đọc và hiểu hết tài liệu' },
       { value: 'c', label: 'Tester đã chuẩn bị xong test case' },
-      { value: 'd', label: 'Khách hàng đã phê duyệt (approve) tài liệu Specs' },
+      { value: 'd', label: 'Khách hàng đã phê duyệt (approve) tài liệu Specs' }
     ],
     correct: 'd',
-    feedbackCorrect: '✅ Chính xác! Tài liệu Specs phải được khách hàng phê duyệt (approve) trước khi team bắt tay vào phát triển — điều này đảm bảo mọi người hiểu đúng yêu cầu và tránh làm lại sau này.',
-    feedbackIncorrect: '❌ Chưa đúng. Bắt buộc phải có sự phê duyệt (approve) của khách hàng — không ai tự ý bắt đầu Coding mà không có chữ ký chấp thuận từ phía khách.',
+    feedbackCorrect: '✅ Chính xác! Tài liệu Specs phải được khách hàng phê duyệt (approve) trước khi team bắt tay vào'
+      + ' phát triển — điều này đảm bảo mọi người hiểu đúng yêu cầu và tránh làm lại sau này.',
+    feedbackIncorrect: '❌ Chưa đúng. Bắt buộc phải có sự phê duyệt (approve) của khách hàng — không ai tự ý bắt đầu Coding mà không có chữ ký chấp thuận từ phía khách.'
   },
   {
     id: 11,
@@ -153,11 +156,11 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Coding → Test (nội bộ) → UAT (khách hàng nghiệm thu)' },
       { value: 'b', label: 'UAT → Coding → Test nội bộ' },
       { value: 'c', label: 'Test nội bộ → Coding → UAT' },
-      { value: 'd', label: 'Coding → UAT → Test nội bộ' },
+      { value: 'd', label: 'Coding → UAT → Test nội bộ' }
     ],
     correct: 'a',
     feedbackCorrect: '✅ Đúng! Thứ tự chuẩn là Coding → Test → UAT: Developer viết code → Tester/QA kiểm thử nội bộ → Khách hàng nghiệm thu (UAT).',
-    feedbackIncorrect: '❌ Chưa đúng. Thứ tự đúng là Coding → Test → UAT. Phải viết code trước, kiểm thử nội bộ tiếp theo, rồi mới mời khách hàng nghiệm thu cuối cùng.',
+    feedbackIncorrect: '❌ Chưa đúng. Thứ tự đúng là Coding → Test → UAT. Phải viết code trước, kiểm thử nội bộ tiếp theo, rồi mới mời khách hàng nghiệm thu cuối cùng.'
   },
   {
     id: 12,
@@ -166,11 +169,11 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Unit Automated Testing — do hệ thống CI/CD tự chạy' },
       { value: 'b', label: 'User Acceptance Testing — do khách hàng thực hiện để nghiệm thu sản phẩm' },
       { value: 'c', label: 'User Application Testing — do Tester nội bộ thực hiện thay mặt khách hàng' },
-      { value: 'd', label: 'Unified Assurance Testing — do QA Lead thực hiện sau khi release' },
+      { value: 'd', label: 'Unified Assurance Testing — do QA Lead thực hiện sau khi release' }
     ],
     correct: 'b',
     feedbackCorrect: '✅ Chính xác! UAT = User Acceptance Testing — khách hàng trực tiếp kiểm thử và nghiệm thu sản phẩm, quyết định chấp nhận hay yêu cầu chỉnh sửa thêm.',
-    feedbackIncorrect: '❌ Chưa đúng. UAT là User Acceptance Testing — chính khách hàng là người thực hiện để nghiệm thu, không phải team kỹ thuật hay hệ thống tự động.',
+    feedbackIncorrect: '❌ Chưa đúng. UAT là User Acceptance Testing — chính khách hàng là người thực hiện để nghiệm thu, không phải team kỹ thuật hay hệ thống tự động.'
   },
   {
     id: 13,
@@ -179,11 +182,12 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Báo ngay cho khách hàng và chờ khách hàng quyết định' },
       { value: 'b', label: 'Tester tự fix bug luôn để tiết kiệm thời gian' },
       { value: 'c', label: 'Tester yêu cầu Developer fix bug trước khi chuyển sang bước tiếp theo' },
-      { value: 'd', label: 'PM quyết định bỏ qua bug và đẩy thẳng lên UAT' },
+      { value: 'd', label: 'PM quyết định bỏ qua bug và đẩy thẳng lên UAT' }
     ],
     correct: 'c',
-    feedbackCorrect: '✅ Đúng! Khi phát hiện bug, Tester báo lại để Developer fix — đây là vòng lặp kiểm thử chuẩn, đảm bảo sản phẩm hoạt động đúng theo Specs trước khi đến tay khách hàng.',
-    feedbackIncorrect: '❌ Chưa đúng. Khi có bug, Tester yêu cầu Developer fix — không tự fix, không bỏ qua, và không báo thẳng ra khách hàng khi đang ở giai đoạn kiểm thử nội bộ.',
+    feedbackCorrect: '✅ Đúng! Khi phát hiện bug, Tester báo lại để Developer fix — đây là vòng lặp kiểm thử chuẩn,'
+      + ' đảm bảo sản phẩm hoạt động đúng theo Specs trước khi đến tay khách hàng.',
+    feedbackIncorrect: '❌ Chưa đúng. Khi có bug, Tester yêu cầu Developer fix — không tự fix, không bỏ qua, và không báo thẳng ra khách hàng khi đang ở giai đoạn kiểm thử nội bộ.'
   },
   {
     id: 14,
@@ -192,11 +196,12 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'Developer hoàn thành toàn bộ code và không còn lỗi kỹ thuật' },
       { value: 'b', label: 'Tester xác nhận đã kiểm thử xong 100% test case' },
       { value: 'c', label: 'PM gửi báo cáo dự án lên ban giám đốc' },
-      { value: 'd', label: 'Khách hàng chấp nhận sản phẩm sau khi hoàn thành UAT' },
+      { value: 'd', label: 'Khách hàng chấp nhận sản phẩm sau khi hoàn thành UAT' }
     ],
     correct: 'd',
     feedbackCorrect: '✅ Chính xác! Chỉ khi khách hàng nghiệm thu và chấp nhận sản phẩm qua UAT, team mới chính thức chuyển sang Bước 4 để tiến hành bàn giao và bảo hành.',
-    feedbackIncorrect: '❌ Chưa đúng. Điều kiện quyết định là khách hàng chấp nhận sản phẩm sau UAT — dù Dev xong hay Tester xong, vẫn phải chờ khách hàng xác nhận mới được chuyển sang bàn giao.',
+    feedbackIncorrect: '❌ Chưa đúng. Điều kiện quyết định là khách hàng chấp nhận sản phẩm sau UAT —'
+      + ' dù Dev xong hay Tester xong, vẫn phải chờ khách hàng xác nhận mới được chuyển sang bàn giao.'
   },
   {
     id: 15,
@@ -205,21 +210,23 @@ const QUESTIONS: QuizQuestion[] = [
       { value: 'a', label: 'BrSE giỏi phụ trách từ Bước 2 (Bidding) đến Bước 3.1 (Specs); BrSE thông thường từ Bước 3.2 đến Bước 4' },
       { value: 'b', label: 'BrSE giỏi chỉ làm Bước 1 (Sales); BrSE thông thường làm tất cả các bước còn lại' },
       { value: 'c', label: 'Cả hai đều phụ trách như nhau, chỉ khác nhau ở tốc độ làm việc' },
-      { value: 'd', label: 'BrSE giỏi chỉ phụ trách Bước 4 (Release); BrSE thông thường phụ trách Bước 1 đến Bước 3' },
+      { value: 'd', label: 'BrSE giỏi chỉ phụ trách Bước 4 (Release); BrSE thông thường phụ trách Bước 1 đến Bước 3' }
     ],
     correct: 'a',
-    feedbackCorrect: '✅ Chính xác! BrSE giỏi tham gia ngay từ giai đoạn đấu thầu và đặc tả (Bước 2–3.1). BrSE thông thường vào từ giai đoạn phát triển, bàn giao và bảo hành (Bước 3.2–4).',
-    feedbackIncorrect: '❌ Chưa đúng. BrSE giỏi phụ trách từ Bước 2 (Bidding) đến Bước 3.1 (Specs). BrSE thông thường phụ trách từ Bước 3.2 (Dev & Test) đến Bước 4 (Release & Bảo hành).',
-  },
+    feedbackCorrect: '✅ Chính xác! BrSE giỏi tham gia ngay từ giai đoạn đấu thầu và đặc tả (Bước 2–3.1).'
+      + ' BrSE thông thường vào từ giai đoạn phát triển, bàn giao và bảo hành (Bước 3.2–4).',
+    feedbackIncorrect: '❌ Chưa đúng. BrSE giỏi phụ trách từ Bước 2 (Bidding) đến Bước 3.1 (Specs).'
+      + ' BrSE thông thường phụ trách từ Bước 3.2 (Dev & Test) đến Bước 4 (Release & Bảo hành).'
+  }
 ];
 
 const TOTAL = QUESTIONS.length;
 
 function getScoreInfo(pct: number): { emoji: string; msg: string } {
   if (pct === 100) return { emoji: '🏆', msg: 'Xuất sắc! Bạn nắm vững toàn bộ kiến thức!' };
-  if (pct >= 80)  return { emoji: '⭐', msg: 'Rất tốt! Bạn đã hiểu sâu phần lớn nội dung.' };
-  if (pct >= 67)  return { emoji: '👍', msg: 'Tốt! Bạn nắm được những điểm cốt lõi.' };
-  if (pct >= 50)  return { emoji: '📖', msg: 'Khá ổn, nhưng nên xem lại một số phần nhé.' };
+  if (pct >= 80) return { emoji: '⭐', msg: 'Rất tốt! Bạn đã hiểu sâu phần lớn nội dung.' };
+  if (pct >= 67) return { emoji: '👍', msg: 'Tốt! Bạn nắm được những điểm cốt lõi.' };
+  if (pct >= 50) return { emoji: '📖', msg: 'Khá ổn, nhưng nên xem lại một số phần nhé.' };
   return { emoji: '💪', msg: 'Bạn cần ôn lại bài học kỹ hơn — cố lên nhé!' };
 }
 
@@ -235,11 +242,11 @@ export default function TestPage() {
 
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
-    cardRefs.current.forEach((el) => {
+    cardRefs.current.forEach(el => {
       if (!el) return;
       const obs = new IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting) {
+          if (entry?.isIntersecting) {
             el.classList.add('visible');
             obs.disconnect();
           }
@@ -249,12 +256,12 @@ export default function TestPage() {
       obs.observe(el);
       observers.push(obs);
     });
-    return () => observers.forEach((o) => o.disconnect());
+    return () => observers.forEach(o => o.disconnect());
   }, []);
 
   function handleSelect(questionId: number, value: string) {
     if (submitted) return;
-    setAnswers((prev) => ({ ...prev, [questionId]: value }));
+    setAnswers(prev => ({ ...prev, [questionId]: value }));
   }
 
   function handleSubmit() {
@@ -263,7 +270,7 @@ export default function TestPage() {
       return;
     }
     setSubmitted(true);
-    const correct = QUESTIONS.filter((q) => answers[q.id] === q.correct).length;
+    const correct = QUESTIONS.filter(q => answers[q.id] === q.correct).length;
     const pct = Math.round((correct / TOTAL) * 100);
     setTimeout(() => setScoreBarWidth(pct), 100);
     setTimeout(() => scoreRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 150);
@@ -277,7 +284,7 @@ export default function TestPage() {
   }
 
   const correctCount = submitted
-    ? QUESTIONS.filter((q) => answers[q.id] === q.correct).length
+    ? QUESTIONS.filter(q => answers[q.id] === q.correct).length
     : 0;
   const scorePct = submitted ? Math.round((correctCount / TOTAL) * 100) : 0;
   const { emoji, msg } = submitted ? getScoreInfo(scorePct) : { emoji: '', msg: '' };
@@ -318,18 +325,18 @@ export default function TestPage() {
           return (
             <div
               key={q.id}
-              ref={(el) => { cardRefs.current[idx] = el; }}
+              ref={el => { cardRefs.current[idx] = el; }}
               className={[
                 'tq-card',
                 submitted && isCorrect ? 'correct' : '',
-                submitted && isWrong ? 'incorrect' : '',
+                submitted && isWrong ? 'incorrect' : ''
               ].filter(Boolean).join(' ')}
             >
               <div className="tq-card__num">Câu hỏi {String(q.id).padStart(2, '0')}</div>
               <div className="tq-card__question">{q.question}</div>
 
               <div className="tq-options">
-                {q.options.map((opt) => {
+                {q.options.map(opt => {
                   const isSelected = selected === opt.value;
                   const showCorrect = submitted && opt.value === q.correct && !isSelected;
                   const optCorrect = submitted && isSelected && opt.value === q.correct;
@@ -344,7 +351,7 @@ export default function TestPage() {
                         optCorrect ? 'is-correct' : '',
                         optWrong ? 'is-wrong' : '',
                         showCorrect ? 'show-correct' : '',
-                        submitted ? 'submitted-option' : '',
+                        submitted ? 'submitted-option' : ''
                       ].filter(Boolean).join(' ')}
                       onClick={() => handleSelect(q.id, opt.value)}
                     >
