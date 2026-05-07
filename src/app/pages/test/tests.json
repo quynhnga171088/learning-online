@@ -361,5 +361,249 @@
       "feedbackCorrect": "✅ Chính xác! BrSE giỏi tham gia ngay từ giai đoạn đấu thầu và đặc tả (Bước 2–3.1). BrSE thông thường vào từ giai đoạn phát triển, bàn giao và bảo hành (Bước 3.2–4).",
       "feedbackIncorrect": "❌ Chưa đúng. BrSE giỏi phụ trách từ Bước 2 (Bidding) đến Bước 3.1 (Specs). BrSE thông thường phụ trách từ Bước 3.2 (Dev & Test) đến Bước 4 (Release & Bảo hành)."
     }]
+  },
+  "day-two": {
+    "description": "20 câu hỏi trắc nghiệm — Kiểm tra mức độ tiếp thu bài học Project Manager",
+    "content": [{
+      "id": 1,
+      "question": "Trách nhiệm cốt lõi của một Project Manager (PM) trong dự án outsource là gì?",
+      "options": [
+        { "value": "a", "label": "Viết code và review pull request cho Developer" },
+        { "value": "b", "label": "Lập kế hoạch, theo dõi tiến độ, quản lý rủi ro và là cầu nối giữa team và khách hàng" },
+        { "value": "c", "label": "Thiết kế giao diện UI/UX và tạo prototype cho dự án" },
+        { "value": "d", "label": "Viết tài liệu SRS và đặc tả yêu cầu nghiệp vụ" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Chính xác! PM chịu trách nhiệm lập kế hoạch, theo dõi tiến độ, quản lý rủi ro, nguồn lực, ngân sách và là đầu mối giao tiếp giữa team phát triển với khách hàng.",
+      "feedbackIncorrect": "❌ Chưa đúng. PM không trực tiếp viết code hay thiết kế — nhiệm vụ chính là lập kế hoạch, theo dõi tiến độ, quản lý rủi ro và kết nối team với khách hàng."
+    }, {
+      "id": 2,
+      "question": "WBS (Work Breakdown Structure) trong quản lý dự án là gì?",
+      "options": [
+        { "value": "a", "label": "Một công cụ chia nhỏ toàn bộ phạm vi dự án thành các công việc có thể quản lý được" },
+        { "value": "b", "label": "Bảng lương của các thành viên trong dự án" },
+        { "value": "c", "label": "Báo cáo tiến độ hàng tuần gửi cho khách hàng" },
+        { "value": "d", "label": "Danh sách các bug cần fix trong sprint" }
+      ],
+      "correct": "a",
+      "feedbackCorrect": "✅ Đúng! WBS là công cụ phân rã phạm vi dự án thành các phần công việc nhỏ hơn, có thể giao việc, ước lượng và theo dõi được — là nền tảng để lập lịch và phân bổ nguồn lực.",
+      "feedbackIncorrect": "❌ Chưa đúng. WBS là Work Breakdown Structure — công cụ chia nhỏ phạm vi dự án thành các đầu việc có thể quản lý, không liên quan đến lương hay báo cáo."
+    }, {
+      "id": 3,
+      "question": "Khi khách hàng yêu cầu thêm tính năng ngoài phạm vi ban đầu đã được phê duyệt, PM cần làm gì?",
+      "options": [
+        { "value": "a", "label": "Yêu cầu Developer làm thêm ngay để giữ mối quan hệ tốt với khách hàng" },
+        { "value": "b", "label": "Từ chối hoàn toàn và không thảo luận thêm" },
+        { "value": "c", "label": "Đánh giá tác động về thời gian, chi phí rồi thực hiện quy trình Change Request chính thức" },
+        { "value": "d", "label": "Chờ đến cuối dự án rồi xử lý một lúc" }
+      ],
+      "correct": "c",
+      "feedbackCorrect": "✅ Chính xác! Đây là xử lý Scope Creep — PM cần đánh giá tác động (thời gian, chi phí, nguồn lực) và thực hiện quy trình Change Request chính thức để mọi thay đổi được ghi nhận và phê duyệt.",
+      "feedbackIncorrect": "❌ Chưa đúng. PM không nên tự ý làm thêm hay từ chối thẳng — cần đánh giá tác động và đi qua quy trình Change Request chính thức để kiểm soát phạm vi dự án."
+    }, {
+      "id": 4,
+      "question": "Milestone trong quản lý dự án có nghĩa là gì?",
+      "options": [
+        { "value": "a", "label": "Số dòng code mà Developer viết được trong một ngày" },
+        { "value": "b", "label": "Điểm mốc quan trọng đánh dấu hoàn thành một giai đoạn hoặc kết quả bàn giao chính của dự án" },
+        { "value": "c", "label": "Buổi họp hàng tuần giữa PM và khách hàng" },
+        { "value": "d", "label": "Tài liệu kiểm thử do Tester tạo ra" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Đúng! Milestone là điểm mốc quan trọng trong dự án — ví dụ: hoàn thành Specs, hoàn thành UAT, Release — giúp PM và khách hàng theo dõi tiến độ tổng thể của dự án.",
+      "feedbackIncorrect": "❌ Chưa đúng. Milestone là điểm mốc đánh dấu hoàn thành một giai đoạn quan trọng, không phải số dòng code hay buổi họp định kỳ."
+    }, {
+      "id": 5,
+      "question": "Rủi ro (Risk) trong dự án khác gì so với Vấn đề (Issue)?",
+      "options": [
+        { "value": "a", "label": "Rủi ro là điều chắc chắn xảy ra; Issue là điều có thể xảy ra" },
+        { "value": "b", "label": "Rủi ro là sự kiện có thể xảy ra trong tương lai; Issue là vấn đề đang xảy ra ở hiện tại" },
+        { "value": "c", "label": "Rủi ro và Issue là hai từ đồng nghĩa trong quản lý dự án" },
+        { "value": "d", "label": "Rủi ro do khách hàng tạo ra; Issue do team nội bộ tạo ra" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Chính xác! Risk là sự kiện chưa xảy ra nhưng có khả năng xảy ra — PM cần lên kế hoạch phòng ngừa. Issue là vấn đề đang thực sự xảy ra — PM cần xử lý ngay.",
+      "feedbackIncorrect": "❌ Chưa đúng. Risk là tiềm năng trong tương lai (cần phòng ngừa), còn Issue là vấn đề đang diễn ra (cần giải quyết ngay). Hai khái niệm này khác nhau rõ ràng."
+    }, {
+      "id": 6,
+      "question": "Status Report (Báo cáo tiến độ) thường bao gồm những nội dung gì?",
+      "options": [
+        { "value": "a", "label": "Chỉ gồm số bug đã fix và số bug còn tồn đọng" },
+        { "value": "b", "label": "Tiến độ thực tế so với kế hoạch, các rủi ro/vấn đề nổi bật và kế hoạch cho giai đoạn tiếp theo" },
+        { "value": "c", "label": "Chỉ gồm danh sách công việc Developer đã hoàn thành" },
+        { "value": "d", "label": "Hóa đơn thanh toán và bảng lương của team" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Đúng! Status Report chuẩn gồm: tiến độ thực tế vs kế hoạch, các rủi ro/vấn đề đang xử lý, kết quả giai đoạn vừa qua và kế hoạch giai đoạn tới — giúp khách hàng nắm toàn cảnh dự án.",
+      "feedbackIncorrect": "❌ Chưa đúng. Status Report cần bao gồm toàn bộ bức tranh dự án: tiến độ, rủi ro, vấn đề, kết quả và kế hoạch tới — không chỉ là danh sách bug hay công việc kỹ thuật."
+    }, {
+      "id": 7,
+      "question": "Escalation (Leo thang vấn đề) trong dự án là gì và khi nào nên thực hiện?",
+      "options": [
+        { "value": "a", "label": "Tăng tốc độ làm việc của Developer khi deadline gần đến" },
+        { "value": "b", "label": "Chuyển vấn đề lên cấp cao hơn (manager, ban giám đốc) khi PM không tự giải quyết được" },
+        { "value": "c", "label": "Gửi email phàn nàn cho khách hàng khi team mắc lỗi" },
+        { "value": "d", "label": "Tăng số lượng tài nguyên khi dự án thiếu người" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Chính xác! Escalation là chuyển vấn đề vượt tầm xử lý lên cấp quản lý cao hơn — thực hiện khi vấn đề ảnh hưởng nghiêm trọng đến dự án và PM không tự giải quyết được trong phạm vi quyền hạn.",
+      "feedbackIncorrect": "❌ Chưa đúng. Escalation là đưa vấn đề lên cấp trên khi PM không tự xử lý được — không phải tăng tốc hay phàn nàn với khách hàng."
+    }, {
+      "id": 8,
+      "question": "Trong quản lý dự án theo phương pháp Agile, Sprint là gì?",
+      "options": [
+        { "value": "a", "label": "Buổi họp hàng ngày kéo dài 15 phút của team" },
+        { "value": "b", "label": "Chu kỳ phát triển ngắn cố định (thường 1–4 tuần) để team hoàn thành một lượng công việc đã cam kết" },
+        { "value": "c", "label": "Tài liệu mô tả toàn bộ yêu cầu của dự án" },
+        { "value": "d", "label": "Buổi họp tổng kết cuối dự án" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Đúng! Sprint là chu kỳ làm việc ngắn cố định trong Agile/Scrum — team cam kết hoàn thành một tập hợp công việc trong Sprint, sau đó review và lên kế hoạch Sprint tiếp theo.",
+      "feedbackIncorrect": "❌ Chưa đúng. Sprint là chu kỳ phát triển ngắn (1–4 tuần) để hoàn thành một lượng công việc cụ thể — không phải buổi họp hay tài liệu."
+    }, {
+      "id": 9,
+      "question": "PM cần làm gì khi phát hiện dự án có nguy cơ trễ deadline?",
+      "options": [
+        { "value": "a", "label": "Im lặng và hy vọng team sẽ tự xoay sở được" },
+        { "value": "b", "label": "Phân tích nguyên nhân, đánh giá các phương án (thêm nguồn lực, cắt scope, điều chỉnh deadline) và chủ động thông báo khách hàng sớm" },
+        { "value": "c", "label": "Đổ lỗi cho Developer và yêu cầu họ làm thêm giờ ngay lập tức" },
+        { "value": "d", "label": "Chờ đến khi trễ thật sự rồi mới báo cáo" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Chính xác! PM giỏi cần phân tích nguyên nhân gốc rễ, cân nhắc các phương án khắc phục và chủ động thông báo khách hàng sớm — báo sớm luôn tốt hơn báo trễ khi sự cố đã xảy ra.",
+      "feedbackIncorrect": "❌ Chưa đúng. PM cần chủ động phân tích và thông báo sớm — không được im lặng hay chờ đợi. Báo khách hàng sớm giúp cả hai bên có thời gian điều chỉnh kế hoạch."
+    }, {
+      "id": 10,
+      "question": "RACI Matrix trong quản lý dự án dùng để làm gì?",
+      "options": [
+        { "value": "a", "label": "Theo dõi số bug của từng Developer theo tuần" },
+        { "value": "b", "label": "Xác định rõ vai trò và trách nhiệm của từng người đối với mỗi đầu việc trong dự án" },
+        { "value": "c", "label": "Tính toán chi phí phát sinh của dự án" },
+        { "value": "d", "label": "Lập lịch họp hàng tuần với khách hàng" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Đúng! RACI Matrix phân định rõ: ai Responsible (thực hiện), ai Accountable (chịu trách nhiệm), ai Consulted (tham vấn), ai Informed (được thông báo) — giúp tránh chồng chéo và bỏ sót trách nhiệm.",
+      "feedbackIncorrect": "❌ Chưa đúng. RACI Matrix là công cụ phân định vai trò và trách nhiệm — R(Responsible), A(Accountable), C(Consulted), I(Informed) — không phải theo dõi bug hay tính chi phí."
+    }, {
+      "id": 11,
+      "question": "Điều gì xảy ra khi một dự án bị \"Scope Creep\" (phình phạm vi)?",
+      "options": [
+        { "value": "a", "label": "Dự án hoàn thành nhanh hơn vì có thêm nhiều tính năng" },
+        { "value": "b", "label": "Khách hàng tự động trả thêm tiền cho các tính năng mới" },
+        { "value": "c", "label": "Phạm vi dự án tăng dần không kiểm soát, dẫn đến trễ tiến độ, vượt ngân sách và quá tải team" },
+        { "value": "d", "label": "Developer được tự do sáng tạo thêm tính năng theo ý mình" }
+      ],
+      "correct": "c",
+      "feedbackCorrect": "✅ Chính xác! Scope Creep là hiện tượng phạm vi tăng dần mà không có kiểm soát chính thức — hậu quả là trễ deadline, vượt ngân sách, team bị quá tải và chất lượng sản phẩm suy giảm.",
+      "feedbackIncorrect": "❌ Chưa đúng. Scope Creep gây ra hậu quả tiêu cực: trễ tiến độ, vượt ngân sách và quá tải team — đây là một trong những nguyên nhân phổ biến nhất khiến dự án thất bại."
+    }, {
+      "id": 12,
+      "question": "Stakeholder (Bên liên quan) trong dự án phần mềm bao gồm những ai?",
+      "options": [
+        { "value": "a", "label": "Chỉ bao gồm PM và Developer" },
+        { "value": "b", "label": "Chỉ bao gồm khách hàng và người dùng cuối" },
+        { "value": "c", "label": "Tất cả những người hoặc nhóm bị ảnh hưởng bởi dự án hoặc có thể ảnh hưởng đến dự án" },
+        { "value": "d", "label": "Chỉ bao gồm ban giám đốc và bộ phận tài chính" }
+      ],
+      "correct": "c",
+      "feedbackCorrect": "✅ Đúng! Stakeholder bao gồm tất cả các bên liên quan: khách hàng, người dùng cuối, team phát triển, ban giám đốc, bộ phận kinh doanh... — PM cần quản lý kỳ vọng và giao tiếp hiệu quả với tất cả họ.",
+      "feedbackIncorrect": "❌ Chưa đúng. Stakeholder rộng hơn nhiều — bao gồm tất cả những ai bị ảnh hưởng hoặc có thể ảnh hưởng đến dự án, không giới hạn ở một nhóm cụ thể nào."
+    }, {
+      "id": 13,
+      "question": "Khi có xung đột giữa hai thành viên trong team, PM nên xử lý như thế nào?",
+      "options": [
+        { "value": "a", "label": "Phớt lờ vì đó là chuyện cá nhân, không ảnh hưởng đến công việc" },
+        { "value": "b", "label": "Lắng nghe cả hai phía, tìm hiểu nguyên nhân gốc rễ và tìm giải pháp đôi bên cùng chấp nhận được" },
+        { "value": "c", "label": "Ngay lập tức sa thải một trong hai người để giữ hòa khí" },
+        { "value": "d", "label": "Chọn nghe theo người có chức vụ cao hơn" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Chính xác! PM cần đóng vai trò hòa giải: lắng nghe khách quan cả hai phía, tìm hiểu nguyên nhân thực sự và dẫn dắt team đến giải pháp mang tính xây dựng — xung đột được xử lý tốt có thể tạo ra sự cải thiện tích cực.",
+      "feedbackIncorrect": "❌ Chưa đúng. PM cần lắng nghe công bằng và tìm giải pháp chung — phớt lờ hay xử lý theo cảm tính đều có thể làm tổn hại đến tinh thần và hiệu suất của cả team."
+    }, {
+      "id": 14,
+      "question": "KPI (Key Performance Indicator) nào dưới đây phù hợp để đo lường hiệu suất của một dự án phần mềm?",
+      "options": [
+        { "value": "a", "label": "Số lần PM đến văn phòng mỗi tuần" },
+        { "value": "b", "label": "Tỷ lệ hoàn thành đúng hạn, tỷ lệ bug, mức độ hài lòng của khách hàng" },
+        { "value": "c", "label": "Số email PM gửi cho khách hàng mỗi ngày" },
+        { "value": "d", "label": "Số lần Developer commit code lên Git" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Đúng! KPI dự án thường bao gồm: tỷ lệ hoàn thành đúng hạn (Schedule Performance), tỷ lệ bug/defect density (Quality), mức độ hài lòng khách hàng (CSAT) — các chỉ số đo lường giá trị thực sự của dự án.",
+      "feedbackIncorrect": "❌ Chưa đúng. KPI cần phản ánh hiệu suất thực sự của dự án như: tiến độ, chất lượng và mức độ hài lòng khách hàng — không phải số lần đến văn phòng hay số commit code."
+    }, {
+      "id": 15,
+      "question": "Trong cuộc họp Daily Standup (họp đứng hàng ngày), mỗi thành viên team cần trả lời những câu hỏi nào?",
+      "options": [
+        { "value": "a", "label": "Hôm qua làm gì? Hôm nay làm gì? Có vấn đề/trở ngại gì không?" },
+        { "value": "b", "label": "Kế hoạch cho cả tuần là gì? Cần thêm nguồn lực nào?" },
+        { "value": "c", "label": "Báo cáo toàn bộ tiến độ sprint và demo sản phẩm" },
+        { "value": "d", "label": "Đánh giá chất lượng công việc của đồng nghiệp" }
+      ],
+      "correct": "a",
+      "feedbackCorrect": "✅ Chính xác! Daily Standup theo Scrum có 3 câu hỏi chuẩn: (1) Hôm qua làm được gì? (2) Hôm nay sẽ làm gì? (3) Có trở ngại/vấn đề gì không? — giúp team đồng bộ thông tin nhanh trong 15 phút.",
+      "feedbackIncorrect": "❌ Chưa đúng. Daily Standup tập trung vào 3 câu hỏi ngắn gọn về hôm qua, hôm nay và trở ngại — không phải họp báo cáo hay lập kế hoạch chi tiết cả tuần."
+    }, {
+      "id": 16,
+      "question": "Khi khách hàng không hài lòng với chất lượng sản phẩm sau UAT, PM nên phản ứng như thế nào?",
+      "options": [
+        { "value": "a", "label": "Tranh luận và chứng minh rằng team đã làm đúng theo tài liệu" },
+        { "value": "b", "label": "Xin lỗi, lắng nghe chi tiết phản hồi, ghi nhận danh sách vấn đề, phân tích và đưa ra kế hoạch khắc phục cụ thể" },
+        { "value": "c", "label": "Yêu cầu khách hàng tự viết lại tài liệu yêu cầu rõ ràng hơn" },
+        { "value": "d", "label": "Chờ khách hàng nguội giận rồi mới liên lạc lại" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Đúng! PM cần giữ thái độ chuyên nghiệp: xin lỗi, lắng nghe cụ thể, ghi nhận tất cả phản hồi và đưa ra kế hoạch khắc phục rõ ràng — điều này thể hiện trách nhiệm và duy trì lòng tin của khách hàng.",
+      "feedbackIncorrect": "❌ Chưa đúng. Tranh luận hay chờ đợi đều làm mất lòng tin. PM cần lắng nghe, ghi nhận và đưa ra kế hoạch khắc phục ngay — đây là phản ứng chuyên nghiệp trong tình huống khủng hoảng."
+    }, {
+      "id": 17,
+      "question": "Trong quản lý dự án, \"Critical Path\" (Đường găng) là gì?",
+      "options": [
+        { "value": "a", "label": "Con đường nhanh nhất để Developer hoàn thành code" },
+        { "value": "b", "label": "Chuỗi các công việc dài nhất quyết định thời gian tối thiểu để hoàn thành dự án — bất kỳ trễ nào trên chuỗi này đều làm trễ toàn dự án" },
+        { "value": "c", "label": "Danh sách các bug nghiêm trọng cần ưu tiên fix" },
+        { "value": "d", "label": "Quy trình phê duyệt tài liệu từ PM lên ban giám đốc" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Chính xác! Critical Path là chuỗi công việc phụ thuộc nhau có tổng thời gian dài nhất — nó xác định thời hạn sớm nhất có thể hoàn thành dự án. PM cần ưu tiên giám sát các task nằm trên Critical Path.",
+      "feedbackIncorrect": "❌ Chưa đúng. Critical Path là chuỗi task dài nhất và quan trọng nhất — bất kỳ trễ nào trên chuỗi này đều kéo trễ toàn bộ dự án. Đây là khái niệm cốt lõi trong CPM (Critical Path Method)."
+    }, {
+      "id": 18,
+      "question": "Retrospective (Họp cải tiến) trong Agile được tổ chức vào thời điểm nào và mục đích là gì?",
+      "options": [
+        { "value": "a", "label": "Đầu sprint để lên kế hoạch công việc cho sprint mới" },
+        { "value": "b", "label": "Cuối mỗi sprint để team nhìn lại những gì làm tốt, chưa tốt và đưa ra hành động cải tiến" },
+        { "value": "c", "label": "Giữa sprint để PM báo cáo tiến độ với khách hàng" },
+        { "value": "d", "label": "Sau khi release để khách hàng đánh giá sản phẩm" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Đúng! Retrospective diễn ra cuối mỗi sprint — team cùng nhau nhìn lại: What went well? (làm tốt gì?), What didn't go well? (chưa tốt gì?) và What to improve? (cải thiện gì?) để làm tốt hơn ở sprint tiếp theo.",
+      "feedbackIncorrect": "❌ Chưa đúng. Retrospective là họp cuối sprint để cải tiến quy trình làm việc — khác với Sprint Planning (đầu sprint) hay Sprint Review (demo sản phẩm)."
+    }, {
+      "id": 19,
+      "question": "Tài liệu nào PM cần chuẩn bị khi kết thúc dự án (Bước 4 — Release & Bảo hành)?",
+      "options": [
+        { "value": "a", "label": "Function List và SRS" },
+        { "value": "b", "label": "Biên bản bàn giao (Delivery Report), tài liệu hướng dẫn sử dụng và kế hoạch bảo hành" },
+        { "value": "c", "label": "Chỉ cần gửi source code, không cần tài liệu" },
+        { "value": "d", "label": "Proposal và Estimate cho dự án tiếp theo" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Chính xác! Khi bàn giao dự án, PM cần chuẩn bị: Biên bản bàn giao, tài liệu hướng dẫn sử dụng/triển khai, tài liệu kỹ thuật, và kế hoạch bảo hành — đảm bảo khách hàng có đủ thông tin để vận hành và bảo trì sản phẩm.",
+      "feedbackIncorrect": "❌ Chưa đúng. Giai đoạn bàn giao cần Biên bản bàn giao, tài liệu hướng dẫn và kế hoạch bảo hành — Function List và SRS là tài liệu của giai đoạn Specs, không phải bàn giao."
+    }, {
+      "id": 20,
+      "question": "Điều gì phân biệt một PM xuất sắc với một PM bình thường trong môi trường outsource?",
+      "options": [
+        { "value": "a", "label": "PM xuất sắc biết code giỏi hơn và có thể thay thế Developer khi cần" },
+        { "value": "b", "label": "PM xuất sắc chủ động dự đoán rủi ro, giao tiếp minh bạch với khách hàng và liên tục cải tiến quy trình team" },
+        { "value": "c", "label": "PM xuất sắc làm việc nhiều giờ hơn và ít ngủ hơn" },
+        { "value": "d", "label": "PM xuất sắc chỉ cần báo cáo đúng hạn là đủ" }
+      ],
+      "correct": "b",
+      "feedbackCorrect": "✅ Đúng! PM xuất sắc không chỉ hoàn thành nhiệm vụ — họ chủ động phòng ngừa rủi ro trước khi xảy ra, xây dựng lòng tin qua giao tiếp minh bạch với khách hàng, và liên tục giúp team cải tiến để làm việc hiệu quả hơn.",
+      "feedbackIncorrect": "❌ Chưa đúng. Giá trị của PM không nằm ở kỹ năng code hay số giờ làm việc — mà ở khả năng dự báo rủi ro, giao tiếp hiệu quả và xây dựng team ngày càng tốt hơn trong mỗi dự án."
+    }]
   }
 }
