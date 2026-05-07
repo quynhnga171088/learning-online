@@ -50,6 +50,12 @@ const router = createBrowserRouter([
           return { Component };
         }
       }, {
+        path: 'test/:testId',
+        lazy: async () => {
+          const { default: Component } = await import('app/pages/test/testDetail.tsx');
+          return { Component };
+        }
+      }, {
         path: '*',
         lazy: async () => {
           const { default: Component } = await import('app/pages/errorPages/NotFoundPage.tsx');
